@@ -14,11 +14,11 @@ Zpěvník Slivice
 - odkazy (nahrávky, ...)
 
 ## export do:
-[ ] tisk A4 / A5 pdf
-[ ] aplikace zpevnik.proscholy.cz
-[ ] www.opensong.org (projekce)
-[ ] MIDI (přehrávání)
-[ ] MusicXML - https://github.com/openlilylib/lilypond-export
+* tisk A4 / A5 pdf
+* aplikace zpevnik.proscholy.cz (https://github.com/proscholy)
+* www.opensong.org (projekce)
+* MIDI (přehrávání)
+* MusicXML - https://github.com/openlilylib/lilypond-export
 
 
 ## struktura dat:
