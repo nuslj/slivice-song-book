@@ -3,6 +3,7 @@ Zpěvník Slivice
 
 ## jednotný zpěvník / DB písní k táboráku i pro scholu ##
 - formát dat LilyPond (akordy i noty)
+- případně https://www.chordpro.org/
 - inspirace https://openlilylib.org/tutorials/
 
 
@@ -65,3 +66,25 @@ https://www.pisnicky.cz/
 za mě bych se kloni k formátu, který půjde použít v opensongu (případně SW tomu podobným)
 možná MusicXML
 a mít možnost konverze do TeXu a tím pádem vygenerování hezkého pdf.
+
+
+## LilyPond examples:
+```lilypond
+\layout {
+  indent = 0
+  ragged-right = ##t
+}
+
+\new Score \with {
+  \remove "Bar_number_engraver"
+}
+<< \chords { c1 g2:7 a:m c1 g2:7 a:m }
+   \new Lyrics \with {
+ \override VerticalAxisGroup.staff-affinity = ##f
+ \override LyricText.parent-alignment-X = #LEFT
+ \override LyricText.self-alignment-X = #LEFT
+   }
+   \lyricmode { This4 and that and sor2 -- row \break
+      Come4 back here to -- mor2 -- row }
+>>
+```
